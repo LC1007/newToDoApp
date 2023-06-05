@@ -1,0 +1,27 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+.todo-list{
+    list-style: none;
+}
+
+.done{
+    text-decoration: line-through;
+}
+
+.item {
+    display: flex;
+    margin: 1rem;
+}
+
+.del-btn{
+    margin-left: 1rem;
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: blue;
+    padding: 1rem;
+    border-radius: 5px;
+}
