@@ -5,6 +5,7 @@ let inputField = document.querySelector('#todo-input')
 // placing the ul into ulList
 let ulList = document.querySelector('.todo-list')
 // let subBtn = document.querySelector('#submit')
+let sortBtn = document.querySelector('#sort')
 
 let todoArr = []
 
@@ -92,6 +93,12 @@ function delItem(id){
     })
 
     addItemsToLocal(todoArr)
+}
+
+sortBtn.addEventListener('click', sort)
+
+function sort(){
+    todoArr = todoArr.sort((a,b) => a + b)
 }
 
 
